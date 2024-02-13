@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button {
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+
+        }
+
+        .container {
+
+            width: 500px;
+            height: 500px;
+            background-color: blueviolet;
+        }
+        .box { 
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+
+        .blue-box {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <button class="button">출력</button>
+    <div class="container">
+
+    </div>
+
+    <script>
+    // 클릭하는 대상과 
+    // 생성하는 대상을 먼저 확인을 해야한다.
+    // 클래스를 여러개를 쓸 수 있다 띄어쓰기를 해서.
+
+    const button = document.querySelector(".button"); // 대상선택
+   
+
+    button.onclick = () => {
+    // 함수 구현부 
+    const container= document.querySelector(".container");
+    container.innerHTML +=  `<div class="box"></div>`; // 이 안에 코드를 작성을 해줄 수 있게 해주는 코드 .
+    const box = document.querySelector(".box");
+    box.onclick = () => {
+        box.classList.add("blue-box");
+
+        for(let i = 0; i < button.length; i++) {
+            // 구현부
+            button[i].classList.add("blue-box");
+      
+}
+}
+
+    }
+    </script>
+</body>
+</html>

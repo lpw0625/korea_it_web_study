@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* flex : 정렬 때문에 쓰이고 기본값은 row */
+        /* 플랙스의 세가지 방향 flex-start , flex-center, flex-end */
+        /* space-between , center가 자주 쓰임. */
+        /* 포지션은 겹쳐야 할 때 자주 쓰인다.  */
+        /* 플렉스 용도는 우측정렬, 플렉스는 안의 요소를 블록 요소로 본다.*/
+        /* justify-content, align-items를 자주 쓰임. */
+        /* 자동으로 요소가 채워지면 줄이 바꿔주는 것. */
+        /* 주축은 justify-content */
+        /* 교차축은 align-items */
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+           display: flex; 
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           /* flex-wrap: wrap; */
+            border: 1px solid #000;
+            height: 400px;
+
+
+        }
+
+        .box1 {
+            border: 1px solid #000;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+        
+    </div>
+    
+</body>
+</html>

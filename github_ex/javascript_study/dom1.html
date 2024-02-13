@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" value="테스트검색">
+    <input type="text" class="inputs">
+    <input type="text" class="inputs">
+<script> 
+    const searchInput = document.getElementById("search");
+    // console.log(document.getElementById("search"));
+    console.log(searchInput.value);
+    searchInput.value = "검색내용";
+    //document 객체로 제어를 할 것이다. 
+
+    const inputs = document.getElementsByClassName("inputs");
+    console.log(inputs);
+    inputs[0].value = "aaa";
+    inputs[1].value = "bbb";
+
+    const inputs2 = document.getElementsByTagName("input");
+    console.log(inputs2);
+
+    // 선택자를 통한 요소가져오기
+    const searchInput2 = document.querySelector("#search"); []
+    const inputs3 = document.querySelector("search");
+    const inputs4 = document.querySelector(".inputs"); //첫번째 .inputs 요소부터 가져온다.
+    const inputs5 = document.querySelectorAll(".inputs"); //(".inputs" /고급선택자.) // 첫번째 input 태그 요소.
+    const inputs6 = document.querySelectorAll("input"); // all 을 써서 다가져옴 
+    // 태그명이 input인 것을 가져와라. 
+
+</script>
+</body>
+</html>

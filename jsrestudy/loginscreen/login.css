@@ -1,0 +1,41 @@
+.login-container {
+    position: relative;
+    width: 700px;
+    height: 900px;
+    background-color: gray;
+    
+    margin: center;
+    border: solid 1px black;
+
+}
+
+
+.id-button {
+    
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    margin: center;
+    border: solid 1px black;
+}
+
+
+
+.pw-button {
+
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    margin: center;
+    border: solid 1px black;
+}
+
+
+.signin-button {
+
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    margin: center;
+    border: solid 1px black;
+}
